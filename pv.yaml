@@ -9,5 +9,5 @@ spec:
     - ReadWriteOnce
   storageClassName: "gp2"  # Update with the appropriate StorageClass name
   awsElasticBlockStore:
-    volumeID: vol-03fecdcfa4914dbef  # Replace with your EBS volume ID
+    volumeID: ${var.ebs_volume_id}  # Replace with your EBS volume ID
     fsType: ext4
